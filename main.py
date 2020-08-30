@@ -20,3 +20,7 @@ def show_user_profile(username):
 @app.route('/post/<int:post_id>')
 def show_post(post_id):
     return 'Post %d' % post_id
+
+
+if __name__ == '__main__':
+    app.run('0.0.0.0', 8080)
